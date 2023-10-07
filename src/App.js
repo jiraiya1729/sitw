@@ -11,8 +11,7 @@ import useToken from "./components/useToken";
 import Profile from './components/Profile'
 import Header from './components/Header'
 import Notification from "./components/Notification";
-// import Bg from "./components/Bg";
-// import Login from './components/Login'
+
 function App() {
   const {token,removeToken, setToken} = useToken()
   return (
