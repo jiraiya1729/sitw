@@ -1,10 +1,14 @@
 import React, { useState, useRef, useEffect} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
-import 'font-awesome/css/font-awesome.min.css';
+
+
+import { IoIosArrowDropdown, IoIosArrowDropup } from 'react-icons/io';
 
 
 
+
+// import { icons, } from "react-icons";
 import {MdNotifications} from "react-icons/md"
 import { CgProfile } from 'react-icons/cg';
  
@@ -48,7 +52,7 @@ function Header(props) {
     const logged = localStorage.getItem('email');
      
     return(
-  
+    
 <header className="text-gray-300 body-font bg-black ">
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a className="flex title-font font-medium items-center mb-4 md:mb-0">
@@ -68,15 +72,15 @@ function Header(props) {
       <button className="mr-5 hover:border-2 hover:border-blue-500  hover:text-blue-700 p-2 rounded" onClick={() => navigate("/notifications")}>
         <MdNotifications />
       </button>
-     
+    
       <div className="relative inline-block text-left mr-5">
-        <button onClick={() => setDropdownOpen(!dropdownOpen)} className="hover:text-indigo-500">
-          <div className="flex flex-row">
+      <button onClick={() => setDropdownOpen(!dropdownOpen)} className="hover:text-indigo-500">
+    <div className="flex flex-row">
+        <CgProfile />
+        {dropdownOpen ? <IoIosArrowDropup /> : <IoIosArrowDropdown />}
+    </div>
+</button>
 
-          <CgProfile />
-          <i className="fa fa-angle-down ml-2"></i>
-          </div>
-        </button>
 
         {dropdownOpen && (
   <div ref={dropdownRef} className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-md bg-black bg-opacity-90 text-white ring-1 ring-purple-500 ring-opacity-5 z-50">
