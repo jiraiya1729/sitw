@@ -11,7 +11,7 @@ const Home = () => {
     
     <FaRocket className="text-6xl mb-4 text-gray-700" />
     
-    <p className="text-2xl text-gray-700 mb-4">Welcome to elspace</p>
+    <p className="text-2xl text-gray-700 mb-4">Welcome to elfspace</p>
     <p className="text-xl text-gray-500 mb-4">Your aerospace standard technical assistance</p>
 
     <div className="w-full max-w-md h-12 border-0 rounded-lg p-2 shadow-md bg-white flex items-center mb-5">
