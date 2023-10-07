@@ -1,14 +1,7 @@
 import React, { useState, useRef, useEffect} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
-
-
 import { IoIosArrowDropdown, IoIosArrowDropup } from 'react-icons/io';
-
-
-
-
-// import { icons, } from "react-icons";
 import {MdNotifications} from "react-icons/md"
 import { CgProfile } from 'react-icons/cg';
  
@@ -56,7 +49,7 @@ function Header(props) {
 <header className="text-gray-300 body-font bg-black ">
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a className="flex title-font font-medium items-center mb-4 md:mb-0">
-      
+      <img href="/" src="/images/logo.jpg" alt="Elfspace Logo" className="w-8 h-8 mr-2 rounded-full"/>
       <a href="/" className="ml-3 text-xl">Elfspace</a>
     </a>
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
