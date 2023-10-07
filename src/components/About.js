@@ -60,7 +60,7 @@ const About = () => {
             <Card />
           </div>
 
-        </div> {/* Close flex div */}
+        </div> 
       </div>
     </div>
   );
